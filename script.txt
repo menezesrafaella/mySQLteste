@@ -1,0 +1,6 @@
+use teste;
+
+select t.id_filial, f.nm_filial, p.id_produto, p.ds_produto, t.qt_estoque_disponivel from tb_estoque t 
+inner join tb_filial f on f.id_filial = t.id_filial 
+inner join tb_produto p on t.id_filial = p.id_produto;
+
